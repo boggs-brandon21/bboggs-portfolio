@@ -1,0 +1,136 @@
+@import 'tailwindcss';
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Schibsted Grotesk', sans-serif;
+	background: #0a0a0a;
+	color: #f3f4f6;
+}
+
+.app-background {
+	background: radial-gradient(125% 115% at 50% 10%, #000 40%, #63e 150%);
+}
+
+.app-background2 {
+	background: radial-gradient(
+		circle farthest-corner at center,
+		#000 25%,
+		#63e 90%
+	);
+}
+
+.bg-flames {
+  /* your dark base */
+  background-color: #000;
+  /* four corner‑flames, no repeat, fixed size */
+  background-image:
+    radial-gradient(
+      circle at top left,
+      rgba(255,235, 59,0.9) 0%,
+      rgba(245,124, 0,0.7) 40%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(255,235, 59,0.9) 0%,
+      rgba(245,124, 0,0.7) 40%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(255,235, 59,0.9) 0%,
+      rgba(245,124, 0,0.7) 40%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(255,235, 59,0.9) 0%,
+      rgba(245,124, 0,0.7) 40%,
+      transparent 70%
+    );
+  background-repeat: no-repeat;
+  background-size: 200px 200px; /* tweak for bigger/smaller “flames” */
+}
+
+@layer utilities {
+	@keyframes blink {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+	}
+
+	.animate-blink {
+		animation: blink 0.8s step-end infinite;
+	}
+
+	@keyframes loading {
+		0% {
+			transform: translateX(-100%);
+		}
+		100% {
+			transform: translateX(250%);
+		}
+	}
+
+	.animate-loading-bar {
+		animation: loading 0.8s ease infinite;
+	}
+}
+
+.reveal {
+	opacity: 0;
+	transform: translateY(20px);
+	transition:
+		opacity 0.7s ease-out,
+		transform 0.6s ease-out;
+}
+
+.reveal.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.violet-gradient {
+	background: #804dee;
+	background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+	background: -webkit-linear-gradient(
+		-90deg,
+		#804dee 0%,
+		rgba(60, 51, 80, 0) 100%
+	);
+}
+
+.red-gradient {
+	background: darkred;
+	background: linear-gradient(
+		-90deg,
+		#ff0000 0%,
+		rgba(215, 171, 171, 0) 100%
+	);
+	background: -webkit-linear-gradient(
+		-90deg,
+		#ff0000 0%,
+		rgba(215, 171, 171, 0) 100%
+	);
+}
+
+.green-pink-gradient {
+	background: #00cea8;
+	background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+	background: -webkit-linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.orange-text-gradient,
+.green-text-gradient,
+.blue-text-gradient,
+.pink-text-gradient {
+	background: linear-gradient(to top, #f12711, #f5af19);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
