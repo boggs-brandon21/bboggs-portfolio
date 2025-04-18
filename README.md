@@ -62,10 +62,10 @@ This portfolio website is a responsive, single-page application built to demonst
 
 ## 📸 Screenshots
 
-![Home Section](./assets/screenshots/home.png)
-![Projects Section](./assets/screenshots/projects.png)
-![Experience Timeline](./assets/screenshots/experience.png)
-![Contact Form](./assets/screenshots/contact.png)
+![Home Section](./public/home-screen.png)
+![Projects Section](./public/projects-screen.png)
+![Experience Timeline](./public/work-exp-screen.png)
+![Contact Form](./public/contact-me-screen.png)
 
 ---
 
