@@ -2,6 +2,7 @@
 import selflogo from './company/self-employed.png';
 import furnacare from './company/furnacarelogo2.png';
 import army from './company/82airborne.png';
+import servpro from './company/Servpro_logo_PNG1.png';
 
 // Import tech stack images
 import python from './tech-stack/python.png';
@@ -13,6 +14,7 @@ import rlogo from './tech-stack/Rlogo.png';
 // Import project images
 import pirate from './projects/pirate-game.png';
 import inventoryapp from './projects/inventory-app.png';
+import travlr from './projects/travlr_project.png';
 
 // Import tech logos
 import css from './tech/css.png';
@@ -23,6 +25,7 @@ import nodejs from './tech/nodejs.png';
 import reactjs from './tech/reactjs.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
+import angular from './tech/angular_logo.png';
 
 // Import common assets
 import github from './github.png';
@@ -49,4 +52,7 @@ export {
 	army,
 	pirate,
 	inventoryapp,
+	angular,
+	travlr,
+	servpro,
 };
