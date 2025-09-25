@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
 	const toggleResume = () => {
-		const resumeUrl = '/Resume.pdf';
-		window.open(resumeUrl);
+		const resumeUrl = `${import.meta.env.BASE_URL}Resume.pdf`;
+		window.open(resumeUrl, '_blank');
 	};
 
 	useEffect(() => {
